@@ -1,0 +1,1353 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#18241d">
+  <meta name="description" content="Загородный отдых в доме A-Frame в сосновом бору в Кургановском: русская баня, горячий сибирский чан, костровая зона и отдых рядом с Екатеринбургом.">
+  <title>УЮТ • Forest Resort — дом A-Frame и баня в лесу под Екатеринбургом</title>
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="УЮТ • Forest Resort">
+  <meta property="og:title" content="УЮТ • Forest Resort — дом A-Frame и баня в лесу под Екатеринбургом">
+  <meta property="og:description" content="Дом A-Frame с баней и горячим чаном в сосновом бору — 25 минут от Екатеринбурга. Прямое бронирование у владельцев.">
+  <meta property="og:image" content="photo1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="УЮТ • Forest Resort">
+  <meta name="twitter:description" content="Дом A-Frame с баней и чаном в сосновом бору под Екатеринбургом.">
+  <meta name="twitter:image" content="photo1.jpg">
+
+  <!-- Preload hero -->
+  <link rel="preload" as="image" href="photo1.jpg">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "УЮТ • Forest Resort",
+    "description": "Загородный гостевой комплекс: дом A-Frame, русская баня, горячий сибирский чан и костровая зона в сосновом бору под Екатеринбургом.",
+    "image": "photo1.jpg",
+    "telephone": "+7-900-000-00-00",
+    "priceRange": "от 8 000 ₽ / сутки",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "дп Кургановский",
+      "addressRegion": "Свердловская область",
+      "addressCountry": "RU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 56.662180,
+      "longitude": 60.446616
+    },
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Русская баня", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Горячий чан", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Костровая зона", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Парковка", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      color-scheme: light;
+      --forest: #18241d;
+      --forest-soft: #263a2e;
+      --cream: #f7f4ed;
+      --gold: #d8b574;
+      --ink: #27352c;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, .font-display { font-family: "Manrope", sans-serif; }
+
+    ::selection { background: #d8b574; color: #18241d; }
+
+    .glass-header {
+      background: rgba(250, 249, 245, .79);
+      border-bottom: 1px solid rgba(255, 255, 255, .34);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    /* ФОН ОСТАВЛЕН БЕЗ ИЗМЕНЕНИЙ (photo1.jpg) */
+    .hero-image {
+      background-image:
+        linear-gradient(90deg, rgba(13, 24, 18, .77) 0%, rgba(13, 24, 18, .52) 48%, rgba(13, 24, 18, .19) 100%),
+        linear-gradient(0deg, rgba(13, 24, 18, .64) 0%, transparent 42%),
+        url("photo1.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+
+    .hero-noise {
+      background-image: radial-gradient(rgba(255,255,255,.14) .6px, transparent .6px);
+      background-size: 5px 5px;
+      opacity: .16;
+      pointer-events: none;
+    }
+
+    .gold-text {
+      background: linear-gradient(110deg, #f4e2bd 5%, #d7b36e 48%, #f1dfbb 90%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .button-glow {
+      box-shadow: 0 10px 30px rgba(216, 181, 116, .27);
+      animation: pulse-glow 2.8s ease-in-out infinite;
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 10px 30px rgba(216, 181, 116, .24); }
+      50% { box-shadow: 0 12px 38px rgba(216, 181, 116, .43); }
+    }
+
+    .feature-card {
+      transform: translateY(0);
+      transition: transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-7px) scale(1.012);
+      box-shadow: 0 28px 64px rgba(26, 38, 29, .15);
+    }
+
+    .feature-image { transition: transform .75s cubic-bezier(.2,.8,.2,1); }
+    .feature-card:hover .feature-image { transform: scale(1.055); }
+
+    .mobile-menu {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height .35s ease, opacity .25s ease, padding .35s ease;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .mobile-menu.is-open {
+      max-height: 520px;
+      opacity: 1;
+      padding-top: 12px;
+      padding-bottom: 18px;
+    }
+
+    .modal-backdrop {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .25s ease, visibility .25s ease;
+    }
+
+    .modal-backdrop.is-open { opacity: 1; visibility: visible; }
+
+    .modal-card {
+      transform: translateY(14px) scale(.98);
+      transition: transform .28s cubic-bezier(.2,.8,.2,1);
+    }
+
+    .modal-backdrop.is-open .modal-card { transform: translateY(0) scale(1); }
+
+    .spinner {
+      width: 22px;
+      height: 22px;
+      border: 2px solid rgba(24, 36, 29, .18);
+      border-top-color: #263a2e;
+      border-radius: 999px;
+      animation: spin .75s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .mobile-booking-bar { padding-bottom: max(12px, env(safe-area-inset-bottom)); }
+
+    /* ===== Поля дат ===== */
+    .date-card { position: relative; }
+
+    .date-input {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      position: relative;
+      display: block;
+      width: 100%;
+      min-height: 1.85rem;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      font-family: "DM Sans", sans-serif;
+      font-size: 1.0625rem;
+      font-weight: 700;
+      letter-spacing: -.015em;
+      line-height: 1.5;
+      color: #22332a;
+      outline: none;
+      color-scheme: light;
+      cursor: pointer;
+    }
+
+    .date-input::-webkit-datetime-edit { padding: 0; }
+    .date-input::-webkit-datetime-edit-fields-wrapper { padding: 0; }
+    .date-input::-webkit-datetime-edit-text { color: #b3ada2; padding: 0 .1em; }
+
+    .date-input::-webkit-datetime-edit-month-field,
+    .date-input::-webkit-datetime-edit-day-field,
+    .date-input::-webkit-datetime-edit-year-field {
+      padding: 0 .06em;
+      border-radius: .4rem;
+    }
+
+    .date-input::-webkit-datetime-edit-month-field:focus,
+    .date-input::-webkit-datetime-edit-day-field:focus,
+    .date-input::-webkit-datetime-edit-year-field:focus {
+      background: #e3ebdd;
+      color: #1c2f24;
+    }
+
+    .date-input::-webkit-calendar-picker-indicator {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .date-input::-webkit-inner-spin-button,
+    .date-input::-webkit-clear-button { display: none; }
+    .date-input::-moz-focus-inner { border: 0; padding: 0; }
+
+    .date-card:focus-within .date-badge {
+      background-color: #263a2e;
+      color: #e5c98f;
+    }
+
+    /* ===== FAQ ===== */
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height .42s cubic-bezier(.2,.8,.2,1), opacity .35s ease;
+    }
+
+    .faq-item.is-open .faq-answer { opacity: 1; }
+
+    .faq-icon {
+      transition: transform .38s cubic-bezier(.2,.8,.2,1),
+                  background-color .3s ease,
+                  color .3s ease;
+      will-change: transform;
+    }
+
+    .faq-item.is-open .faq-icon {
+      transform: rotate(45deg);
+      background-color: #263a2e;
+      color: #e5c98f;
+    }
+
+    .faq-question { -webkit-tap-highlight-color: transparent; }
+
+    /* ===== Lightbox ===== */
+    .lightbox {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity .3s ease, visibility .3s ease;
+    }
+
+    .lightbox.is-open { opacity: 1; visibility: visible; pointer-events: auto; }
+
+    .lightbox-image {
+      transform: scale(.94);
+      opacity: 0;
+      transition: transform .42s cubic-bezier(.2,.8,.2,1), opacity .35s ease;
+    }
+
+    .lightbox.is-open .lightbox-image { transform: scale(1); opacity: 1; }
+
+    .zoom-hint {
+      opacity: 0;
+      transform: scale(.8);
+      transition: opacity .3s ease, transform .3s ease;
+    }
+
+    .zoom-trigger:hover .zoom-hint,
+    .zoom-trigger:focus-visible .zoom-hint { opacity: 1; transform: scale(1); }
+
+    .zoom-trigger { -webkit-tap-highlight-color: transparent; }
+
+    .zoom-trigger:focus-visible {
+      outline: 3px solid #d8b574;
+      outline-offset: -5px;
+      border-radius: 1rem;
+    }
+
+    /* ===== Кнопка «наверх» ===== */
+    .back-to-top {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: opacity .3s ease, visibility .3s ease, transform .3s ease;
+    }
+
+    .back-to-top.is-visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="glass-header fixed inset-x-0 top-0 z-50">
+    <div class="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-4 sm:px-6 lg:h-[82px] lg:px-8">
+      <a href="#главная" class="group flex items-center gap-3" aria-label="УЮТ — на главную">
+        <span class="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#203329] text-[#e3c68d] shadow-lg transition duration-300 group-hover:rotate-[-6deg] group-hover:scale-105">
+          <svg viewBox="0 0 40 40" class="h-7 w-7" fill="none" aria-hidden="true">
+            <path d="M5 29.5 20 8l15 21.5H5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M14 29.5V20h12v9.5M18 20v9.5M22 20v9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M20 8v-4M20 4l-3 2M20 4l3 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="leading-tight">
+          <span class="block font-display text-lg font-extrabold tracking-[.18em] text-[#203329]">УЮТ</span>
+          <span class="block text-[9px] font-semibold tracking-[.25em] text-stone-500">FOREST RESORT</span>
+        </span>
+      </a>
+
+      <nav class="hidden items-center gap-7 text-sm font-semibold text-stone-700 lg:flex" aria-label="Основная навигация">
+        <a class="transition hover:text-emerald-800" href="#атмосфера">Атмосфера</a>
+        <a class="transition hover:text-emerald-800" href="#отдых">Баня и отдых</a>
+        <a class="transition hover:text-emerald-800" href="#цены">Цены</a>
+        <a class="transition hover:text-emerald-800" href="#отзывы">Отзывы</a>
+        <a class="transition hover:text-emerald-800" href="#локация">Локация</a>
+        <a class="transition hover:text-emerald-800" href="#вопросы">Вопросы</a>
+      </nav>
+
+      <div class="hidden items-center gap-3 lg:flex">
+        <a href="tel:+79000000000" class="inline-flex items-center gap-2 rounded-full border border-stone-300/80 px-4 py-2.5 text-sm font-semibold text-[#263a2e] transition hover:border-emerald-700 hover:text-emerald-800">
+          <svg viewBox="0 0 20 20" class="h-4 w-4" fill="none" aria-hidden="true">
+            <path d="M4 3.5h3l1.5 4-2 1.2a9 9 0 0 0 4.8 4.8l1.2-2 4 1.5v3a1.5 1.5 0 0 1-1.6 1.5A14.5 14.5 0 0 1 3.5 5.1 1.5 1.5 0 0 1 4 3.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          </svg>
+          Позвонить
+        </a>
+        <a href="#бронирование" class="button-glow inline-flex items-center gap-2 rounded-full bg-[#d8b574] px-5 py-3 text-sm font-bold text-[#1d2b21] transition hover:bg-[#e5c98f]">
+          Забронировать
+          <svg viewBox="0 0 20 20" class="h-4 w-4" fill="none" aria-hidden="true">
+            <path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <button id="menuButton" class="flex h-11 w-11 items-center justify-center rounded-full border border-stone-300/80 text-[#263a2e] transition hover:bg-white lg:hidden" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+        <svg id="menuIcon" viewBox="0 0 24 24" class="h-6 w-6" fill="none" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <nav id="mobileMenu" class="mobile-menu border-t border-stone-200/70 px-5 lg:hidden" aria-label="Мобильная навигация">
+      <div class="mx-auto flex max-w-7xl flex-col gap-1">
+        <a class="rounded-xl px-3 py-3 font-semibold text-stone-700 hover:bg-white/70" href="#атмосфера">Атмосфера</a>
+        <a class="rounded-xl px-3 py-3 font-semibold text-stone-700 hover:bg-white/70" href="#отдых">Баня и отдых</a>
+        <a class="rounded-xl px-3 py-3 font-semibold text-stone-700 hover:bg-white/70" href="#цены">Цены</a>
+        <a class="rounded-xl px-3 py-3 font-semibold text-stone-700 hover:bg-white/70" href="#отзывы">Отзывы</a>
+        <a class="rounded-xl px-3 py-3 font-semibold text-stone-700 hover:bg-white/70" href="#локация">Локация</a>
+        <a class="rounded-xl px-3 py-3 font-semibold text-stone-700 hover:bg-white/70" href="#вопросы">Вопросы</a>
+        <div class="mt-2 grid grid-cols-2 gap-2">
+          <a href="tel:+79000000000" class="rounded-full border border-[#263a2e] px-4 py-3 text-center font-bold text-[#263a2e]">Позвонить</a>
+          <a href="https://wa.me/79000000000" target="_blank" rel="noopener" class="rounded-full bg-[#263a2e] px-4 py-3 text-center font-bold text-white">WhatsApp</a>
+        </div>
+        <a class="mt-1 rounded-full bg-[#d8b574] px-5 py-3.5 text-center font-bold text-[#1d2b21]" href="#бронирование">Забронировать напрямую</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="главная" class="hero-image relative flex min-h-[780px] items-center overflow-hidden pt-[72px] text-white sm:min-h-[820px] lg:min-h-[850px] lg:pt-[82px]">
+      <div class="hero-noise absolute inset-0"></div>
+      <div class="absolute -right-24 top-32 h-72 w-72 rounded-full bg-emerald-200/10 blur-3xl"></div>
+      <div class="relative mx-auto grid w-full max-w-7xl gap-12 px-5 pb-16 pt-14 sm:px-8 lg:grid-cols-[1.15fr_.85fr] lg:items-center lg:gap-16 lg:px-8 lg:pb-20 lg:pt-20">
+        <div class="max-w-3xl">
+          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-xs font-semibold tracking-[.12em] text-white/90 backdrop-blur-md sm:text-sm">
+            <span class="h-2 w-2 rounded-full bg-amber-300 shadow-[0_0_14px_rgba(252,211,77,.9)]"></span>
+            ЗАГОРОДНЫЙ ДОМ • КУРГАНОВСКИЙ
+          </div>
+          <h1 class="font-display text-[2.4rem] font-semibold leading-[1.08] tracking-[-.045em] sm:text-6xl lg:text-[4.2rem]">
+            Дом A-Frame с баней и чаном
+            <span class="gold-text block">в сосновом бору</span>
+            — 25 минут от Екатеринбурга
+          </h1>
+          <p class="mt-6 max-w-2xl text-base leading-7 text-white/82 sm:text-lg sm:leading-8">
+            Уютный дом-шалаш в сосновом бору дп Кургановский, горячий банный чан под звёздами и русская баня. Отдыхайте душой напрямую от владельцев — без наценок и комиссий.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <a href="#бронирование" class="button-glow inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-[#d8b574] px-7 text-base font-bold text-[#1d2b21] transition hover:-translate-y-0.5 hover:bg-[#e7ca8e]">
+              Выбрать даты отдыха
+              <svg viewBox="0 0 20 20" class="h-5 w-5" fill="none" aria-hidden="true">
+                <path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/79000000000" target="_blank" rel="noopener" class="inline-flex min-h-14 items-center justify-center gap-2 rounded-full border border-white/35 bg-white/5 px-7 text-base font-semibold text-white backdrop-blur-sm transition hover:bg-white/15">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true">
+                <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.2-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 .9-2.2.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.2 1.1 2.2 1.4 2.5 1.5.2.1.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l1.9.9c.5.2.5.3.5.4.1.2.1 1-.1 1.6Z"/>
+              </svg>
+              Написать в WhatsApp
+            </a>
+          </div>
+
+          <div class="mt-10 flex flex-wrap gap-x-7 gap-y-4 text-sm text-white/80">
+            <span class="inline-flex items-center gap-2"><span class="text-[#e6c681]">✦</span> Дом среди сосен</span>
+            <span class="inline-flex items-center gap-2"><span class="text-[#e6c681]">✦</span> Русская баня</span>
+            <span class="inline-flex items-center gap-2"><span class="text-[#e6c681]">✦</span> Горячий чан</span>
+          </div>
+        </div>
+
+        <!-- ФОРМА -->
+        <div id="бронирование" class="scroll-mt-28">
+          <div class="rounded-[2rem] border border-white/25 bg-[#f8f5ed]/95 p-5 text-[#263a2e] shadow-[0_24px_90px_rgba(0,0,0,.25)] backdrop-blur-xl sm:p-7">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="text-xs font-bold tracking-[.18em] text-emerald-800">ВАШЕ УЕДИНЕНИЕ НАЧИНАЕТСЯ ЗДЕСЬ</p>
+                <h2 class="mt-2 font-display text-2xl font-bold tracking-tight sm:text-3xl">Выберите даты</h2>
+                <p class="mt-2 text-sm leading-6 text-stone-600">Укажите даты — подготовим запрос на проверку свободных дней.</p>
+              </div>
+              <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-[#e9e2d2] text-[#263a2e]">
+                <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" aria-hidden="true">
+                  <rect x="3.5" y="5" width="17" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M7.5 3v4M16.5 3v4M4 9.5h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  <path d="m9 14 1.7 1.7L15.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </div>
+
+            <form id="availabilityForm" class="mt-6 space-y-4" novalidate>
+              <div class="grid gap-3 sm:grid-cols-2">
+                <label for="checkIn" class="date-card block cursor-pointer rounded-2xl border border-stone-200 bg-white px-4 py-3.5 shadow-[0_1px_2px_rgba(38,58,46,.05)] transition duration-300 hover:border-[#cdb789] hover:shadow-[0_12px_28px_rgba(38,58,46,.10)] focus-within:border-emerald-700 focus-within:ring-4 focus-within:ring-emerald-700/10">
+                  <span class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[.16em] text-stone-500">
+                    <span class="date-badge flex h-6 w-6 items-center justify-center rounded-lg bg-[#eef2e9] text-emerald-800 transition duration-300">
+                      <svg viewBox="0 0 20 20" class="h-3.5 w-3.5" fill="none" aria-hidden="true">
+                        <path d="M11.6 5.4 15.2 9l-3.6 3.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.2 9H4.4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                      </svg>
+                    </span>
+                    Заезд
+                  </span>
+                  <input id="checkIn" name="checkIn" type="date" required class="date-input mt-2" aria-label="Дата заезда">
+                </label>
+
+                <label for="checkOut" class="date-card block cursor-pointer rounded-2xl border border-stone-200 bg-white px-4 py-3.5 shadow-[0_1px_2px_rgba(38,58,46,.05)] transition duration-300 hover:border-[#cdb789] hover:shadow-[0_12px_28px_rgba(38,58,46,.10)] focus-within:border-emerald-700 focus-within:ring-4 focus-within:ring-emerald-700/10">
+                  <span class="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[.16em] text-stone-500">
+                    <span class="date-badge flex h-6 w-6 items-center justify-center rounded-lg bg-[#eef2e9] text-emerald-800 transition duration-300">
+                      <svg viewBox="0 0 20 20" class="h-3.5 w-3.5" fill="none" aria-hidden="true">
+                        <path d="M8.4 5.4 4.8 9l3.6 3.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4.8 9h10.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                      </svg>
+                    </span>
+                    Выезд
+                  </span>
+                  <input id="checkOut" name="checkOut" type="date" required class="date-input mt-2" aria-label="Дата выезда">
+                </label>
+              </div>
+
+              <div class="grid gap-3 sm:grid-cols-2">
+                <label for="guests" class="block rounded-2xl border border-stone-200 bg-white px-4 py-3.5 transition duration-300 focus-within:border-emerald-700 focus-within:ring-4 focus-within:ring-emerald-700/10">
+                  <span class="text-[10px] font-bold uppercase tracking-[.16em] text-stone-500">Гости</span>
+                  <select id="guests" name="guests" class="mt-1.5 w-full bg-transparent text-[15px] font-bold text-[#22332a] outline-none" required>
+                    <option value="1">1 гость</option>
+                    <option value="2" selected>2 гостя</option>
+                    <option value="3">3 гостя</option>
+                    <option value="4">4 гостя</option>
+                    <option value="5">5 гостей</option>
+                    <option value="6">6 гостей</option>
+                  </select>
+                </label>
+
+                <label for="phone" class="block rounded-2xl border border-stone-200 bg-white px-4 py-3.5 transition duration-300 focus-within:border-emerald-700 focus-within:ring-4 focus-within:ring-emerald-700/10">
+                  <span class="text-[10px] font-bold uppercase tracking-[.16em] text-stone-500">Телефон / мессенджер</span>
+                  <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 900 000-00-00" class="mt-1.5 w-full bg-transparent text-[15px] font-bold text-[#22332a] placeholder:font-medium placeholder:text-stone-400 outline-none" required>
+                </label>
+              </div>
+
+              <p id="dateError" class="hidden text-xs font-semibold text-red-600"></p>
+
+              <div class="flex items-center justify-between gap-3 text-xs text-stone-500">
+                <span class="inline-flex items-center gap-1.5"><span class="h-2 w-2 rounded-full bg-emerald-600"></span> Свободно</span>
+                <span class="inline-flex items-center gap-1.5"><span class="h-2 w-2 rounded-full bg-stone-300"></span> Занято</span>
+                <span class="text-stone-400">Мин. 2 ночи на выходные</span>
+              </div>
+
+              <button type="submit" class="flex min-h-14 w-full items-center justify-center gap-3 rounded-full bg-[#263a2e] px-6 font-bold text-white shadow-lg transition hover:bg-[#34503d] active:scale-[.99]">
+                Проверить свободные даты
+                <svg viewBox="0 0 20 20" class="h-5 w-5" fill="none" aria-hidden="true">
+                  <circle cx="8.7" cy="8.7" r="5.7" stroke="currentColor" stroke-width="1.7"/>
+                  <path d="m13 13 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                </svg>
+              </button>
+            </form>
+
+            <div class="mt-5 flex items-center justify-center gap-2 text-xs text-stone-500">
+              <svg viewBox="0 0 18 18" class="h-4 w-4 text-emerald-800" fill="none" aria-hidden="true">
+                <path d="M9 1.8 14.8 4v4.5c0 3.5-2.2 6.2-5.8 7.7-3.6-1.5-5.8-4.2-5.8-7.7V4L9 1.8Z" stroke="currentColor" stroke-width="1.4"/>
+                <path d="m6.3 8.7 1.7 1.7 3.8-3.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Прямое бронирование у владельцев
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#атмосфера" class="absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-[10px] font-semibold tracking-[.22em] text-white/65 lg:flex">
+        ЛИСТАЙТЕ ВНИЗ
+        <span class="h-10 w-px bg-gradient-to-b from-white/60 to-transparent"></span>
+      </a>
+    </section>
+
+    <!-- АТМОСФЕРА -->
+    <section id="атмосфера" class="bg-[#f7f4ed] px-5 py-20 sm:px-8 sm:py-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid gap-8 lg:grid-cols-[.8fr_1.2fr] lg:items-end">
+          <div>
+            <p class="text-xs font-bold tracking-[.22em] text-emerald-800">МЕСТО, ГДЕ МОЖНО ВЫДОХНУТЬ</p>
+            <h2 class="mt-4 font-display text-4xl font-semibold leading-tight tracking-[-.04em] text-[#24352a] sm:text-5xl">Тишина леса.<br><span class="text-emerald-800">Тепло дома.</span></h2>
+          </div>
+          <p class="max-w-2xl text-base leading-8 text-stone-600 sm:text-lg">
+            УЮТ — загородный гостевой комплекс для тех, кому хочется сменить городской ритм на запах сосен, живой огонь и долгие вечера в тёплой воде под открытым небом.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-5 md:grid-cols-3">
+          <article class="rounded-[1.75rem] border border-stone-200/80 bg-white/70 p-6 shadow-sm">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#e8efe6] text-2xl" aria-hidden="true">⌂</div>
+            <h3 class="mt-5 font-display text-lg font-bold text-[#263a2e]">Дом-шалаш A-Frame</h3>
+            <p class="mt-2 text-sm leading-6 text-stone-600">Дизайнерский дом в сосновом бору — камерная атмосфера и отдых вдали от городского шума.</p>
+          </article>
+          <article class="rounded-[1.75rem] border border-stone-200/80 bg-white/70 p-6 shadow-sm">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#f5ead9] text-2xl" aria-hidden="true">♨</div>
+            <h3 class="mt-5 font-display text-lg font-bold text-[#263a2e]">Горячий сибирский чан</h3>
+            <p class="mt-2 text-sm leading-6 text-stone-600">Фурако под открытым небом — особенный способ замедлиться и провести вечер среди деревьев.</p>
+          </article>
+          <article class="rounded-[1.75rem] border border-stone-200/80 bg-white/70 p-6 shadow-sm">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#e8efe6] text-2xl" aria-hidden="true">♨</div>
+            <h3 class="mt-5 font-display text-lg font-bold text-[#263a2e]">Настоящая деревянная баня</h3>
+            <p class="mt-2 text-sm leading-6 text-stone-600">Тёплое дерево, мягкий пар и спокойный ритуал отдыха без спешки.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ОТДЫХ + ГАЛЕРЕЯ -->
+    <section id="отдых" class="bg-[#eeece4] px-5 py-20 sm:px-8 sm:py-28">
+      <div class="mx-auto max-w-7xl">
+        <div class="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-xs font-bold tracking-[.22em] text-emerald-800">ПРОДУМАНО ДЛЯ ОТДЫХА</p>
+            <h2 class="mt-4 font-display text-4xl font-semibold tracking-[-.04em] text-[#24352a] sm:text-5xl">Ваши любимые<br class="sm:hidden"> моменты в УЮТе</h2>
+          </div>
+          <p class="max-w-md text-sm leading-7 text-stone-600 sm:text-base">Вечер начинается с пара и продолжается у костра. Всё, что нужно для перезагрузки, — в одном месте.</p>
+        </div>
+
+        <div class="mt-10 grid gap-6 lg:grid-cols-2">
+          <!-- Карточка 1: Русская баня -->
+          <article class="feature-card overflow-hidden rounded-[2rem] bg-white shadow-[0_12px_36px_rgba(26,38,29,.08)]">
+            <div class="zoom-trigger relative h-64 cursor-zoom-in overflow-hidden sm:h-[340px]"
+                 data-lightbox data-src="lounge.jpg" data-caption="Русская баня · УЮТ Forest Resort"
+                 role="button" tabindex="0" aria-label="Открыть фотографию «Русская баня» на весь экран">
+              <img src="lounge.jpg" width="800" height="600" alt="Деревянный интерьер русской бани с вениками и столом" class="feature-image h-full w-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent"></div>
+              <span class="absolute left-5 top-5 rounded-full border border-white/25 bg-black/25 px-4 py-2 text-xs font-semibold text-white backdrop-blur-md">ТЕПЛО И ТРАДИЦИИ</span>
+              <span class="zoom-hint absolute right-5 top-5 flex h-11 w-11 items-center justify-center rounded-full border border-white/35 bg-black/35 text-white backdrop-blur-md">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" aria-hidden="true">
+                  <circle cx="10.8" cy="10.8" r="6.3" stroke="currentColor" stroke-width="1.7"/>
+                  <path d="m15.4 15.4 4.1 4.1M10.8 7.9v5.8M7.9 10.8h5.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                </svg>
+              </span>
+              <span class="absolute bottom-5 left-6 font-display text-3xl font-semibold text-white sm:text-4xl">Русская баня</span>
+            </div>
+            <div class="p-6 sm:p-8">
+              <p class="text-sm leading-7 text-stone-600 sm:text-base">Аромат дерева, мягкий жар и полное расслабление. Настоящая баня — тот самый неспешный ритуал, после которого хочется молчать и улыбаться.</p>
+              <div class="mt-5 flex flex-wrap gap-2">
+                <span class="rounded-full bg-[#f8eee3] px-3.5 py-2 text-xs font-semibold text-amber-900">🔥 Настоящий пар</span>
+                <span class="rounded-full bg-[#eef2e9] px-3.5 py-2 text-xs font-semibold text-emerald-900">🌿 Берёзовые веники</span>
+                <span class="rounded-full bg-[#f2f0e9] px-3.5 py-2 text-xs font-semibold text-stone-700">☕ Комната отдыха</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Карточка 2: Костровая зона -->
+          <article class="feature-card overflow-hidden rounded-[2rem] bg-white shadow-[0_12px_36px_rgba(26,38,29,.08)]">
+            <div class="zoom-trigger relative h-64 cursor-zoom-in overflow-hidden sm:h-[340px]"
+                 data-lightbox data-src="fire_zone.jpg" data-caption="Костровая зона · УЮТ Forest Resort"
+                 role="button" tabindex="0" aria-label="Открыть фотографию «Костровая зона» на весь экран">
+              <img src="fire_zone.jpg" width="800" height="600" alt="Костровая зона с мангалом и деревянными шезлонгами" class="feature-image h-full w-full object-cover" loading="lazy">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent"></div>
+              <span class="absolute left-5 top-5 rounded-full border border-white/25 bg-black/25 px-4 py-2 text-xs font-semibold text-white backdrop-blur-md">ВЕЧЕР В ЛЕСУ</span>
+              <span class="zoom-hint absolute right-5 top-5 flex h-11 w-11 items-center justify-center rounded-full border border-white/35 bg-black/35 text-white backdrop-blur-md">
+                <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" aria-hidden="true">
+                  <circle cx="10.8" cy="10.8" r="6.3" stroke="currentColor" stroke-width="1.7"/>
+                  <path d="m15.4 15.4 4.1 4.1M10.8 7.9v5.8M7.9 10.8h5.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                </svg>
+              </span>
+              <span class="absolute bottom-5 left-6 font-display text-3xl font-semibold text-white sm:text-4xl">Костровая зона</span>
+            </div>
+            <div class="p-6 sm:p-8">
+              <p class="text-sm leading-7 text-stone-600 sm:text-base">Уютные деревянные шезлонги, мангал для идеальных шашлыков на углях и вечерние посиделки у костра под шум уральских сосен.</p>
+              <div class="mt-5 flex flex-wrap gap-2">
+                <span class="rounded-full bg-[#f8eee3] px-3.5 py-2 text-xs font-semibold text-amber-900">🔥 Живой огонь</span>
+                <span class="rounded-full bg-[#f2f0e9] px-3.5 py-2 text-xs font-semibold text-stone-700">🍢 Мангал</span>
+                <span class="rounded-full bg-[#eef2e9] px-3.5 py-2 text-xs font-semibold text-emerald-900">🌲 Сосновый бор</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- ГАЛЕРЕЯ -->
+        <div class="mt-14">
+          <div class="flex items-end justify-between gap-4">
+            <div>
+              <p class="text-xs font-bold tracking-[.22em] text-emerald-800">ГАЛЕРЕЯ</p>
+              <h3 class="mt-2 font-display text-2xl font-bold text-[#24352a] sm:text-3xl">Загляните внутрь</h3>
+            </div>
+            <p class="hidden text-xs text-stone-500 sm:block">Нажмите на фото, чтобы открыть</p>
+          </div>
+
+          <div class="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+            <div class="zoom-trigger group relative aspect-square cursor-zoom-in overflow-hidden rounded-2xl bg-stone-200" data-lightbox data-src="house_evening.jpg" data-caption="Дом A-Frame вечером" role="button" tabindex="0" aria-label="Открыть фото «Дом A-Frame вечером»">
+              <img src="house_evening.jpg" width="400" height="400" alt="Дом A-Frame вечером" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+            </div>
+            <div class="zoom-trigger group relative aspect-square cursor-zoom-in overflow-hidden rounded-2xl bg-stone-200" data-lightbox data-src="terrace.jpg" data-caption="Терраса с чаном" role="button" tabindex="0" aria-label="Открыть фото «Терраса с чаном»">
+              <img src="terrace.jpg" width="400" height="400" alt="Терраса с чаном" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+            </div>
+            <div class="zoom-trigger group relative aspect-square cursor-zoom-in overflow-hidden rounded-2xl bg-stone-200" data-lightbox data-src="banya_room.jpg" data-caption="Вид из чана" role="button" tabindex="0" aria-label="Открыть фото «Вид из чана»">
+              <img src="banya_room.jpg" width="400" height="400" alt="Вид из чана" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+            </div>
+            <div class="zoom-trigger group relative aspect-square cursor-zoom-in overflow-hidden rounded-2xl bg-stone-200" data-lightbox data-src="sauna_inside.jpg" data-caption="Парная" role="button" tabindex="0" aria-label="Открыть фото «Парная»">
+              <img src="sauna_inside.jpg" width="400" height="400" alt="Парная" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+            </div>
+            <div class="zoom-trigger group relative aspect-square cursor-zoom-in overflow-hidden rounded-2xl bg-stone-200" data-lightbox data-src="lounge.jpg" data-caption="Комната отдыха" role="button" tabindex="0" aria-label="Открыть фото «Комната отдыха»">
+              <img src="lounge.jpg" width="400" height="400" alt="Комната отдыха" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+            </div>
+            <div class="zoom-trigger group relative aspect-square cursor-zoom-in overflow-hidden rounded-2xl bg-stone-200" data-lightbox data-src="forest_path.jpg" data-caption="Дом в лесу" role="button" tabindex="0" aria-label="Открыть фото «Дом в лесу»">
+              <img src="forest_path.jpg" width="400" height="400" alt="Дом в лесу" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ЦЕНЫ -->
+    <section id="цены" class="relative overflow-hidden bg-[#203329] px-5 py-20 text-white sm:px-8 sm:py-24">
+      <div class="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-emerald-300/10 blur-3xl"></div>
+      <div class="relative mx-auto max-w-7xl">
+        <div class="max-w-2xl">
+          <p class="text-xs font-bold tracking-[.22em] text-[#dfc48d]">ПРОЗРАЧНЫЕ ЦЕНЫ</p>
+          <h2 class="mt-4 font-display text-4xl font-semibold leading-tight tracking-[-.04em] sm:text-5xl">Сколько стоит отдых</h2>
+          <p class="mt-4 leading-7 text-white/70">Бронируя напрямую, вы платите только владельцам — без комиссий сервисов.</p>
+        </div>
+
+        <div class="mt-10 grid gap-5 md:grid-cols-3">
+          <div class="rounded-[1.75rem] border border-white/15 bg-white/5 p-6 backdrop-blur-sm">
+            <p class="text-xs font-bold uppercase tracking-[.16em] text-[#dfc48d]">Будни</p>
+            <p class="mt-3 font-display text-3xl font-bold">от 8 000 ₽</p>
+            <p class="mt-1 text-sm text-white/60">за сутки, до 4 гостей</p>
+            <ul class="mt-5 space-y-2 text-sm text-white/75">
+              <li class="flex gap-2"><span class="text-[#dfc48d]">✓</span> Дом A-Frame</li>
+              <li class="flex gap-2"><span class="text-[#dfc48d]">✓</span> Костровая зона и мангал</li>
+              <li class="flex gap-2"><span class="text-[#dfc48d]">✓</span> Wi-Fi и парковка</li>
+            </ul>
+          </div>
+          <div class="rounded-[1.75rem] border border-[#d8b574]/60 bg-[#d8b574]/10 p-6 backdrop-blur-sm ring-1 ring-[#d8b574]/40">
+            <p class="text-xs font-bold uppercase tracking-[.16em] text-[#f0d9a8]">Выходные</p>
+            <p class="mt-3 font-display text-3xl font-bold">от 12 000 ₽</p>
+            <p class="mt-1 text-sm text-white/60">за сутки, до 6 гостей</p>
+            <ul class="mt-5 space-y-2 text-sm text-white/80">
+              <li class="flex gap-2"><span class="text-[#f0d9a8]">✓</span> Всё из будней</li>
+              <li class="flex gap-2"><span class="text-[#f0d9a8]">✓</span> Минимум 2 ночи</li>
+              <li class="flex gap-2"><span class="text-[#f0d9a8]">✓</span> Приоритетная проверка дат</li>
+            </ul>
+          </div>
+          <div class="rounded-[1.75rem] border border-white/15 bg-white/5 p-6 backdrop-blur-sm">
+            <p class="text-xs font-bold uppercase tracking-[.16em] text-[#dfc48d]">Дополнительно</p>
+            <p class="mt-3 font-display text-3xl font-bold">от 2 500 ₽</p>
+            <p class="mt-1 text-sm text-white/60">за услугу</p>
+            <ul class="mt-5 space-y-2 text-sm text-white/75">
+              <li class="flex gap-2"><span class="text-[#dfc48d]">✓</span> Русская баня (3 часа)</li>
+              <li class="flex gap-2"><span class="text-[#dfc48d]">✓</span> Горячий чан под звёздами</li>
+              <li class="flex gap-2"><span class="text-[#dfc48d]">✓</span> Веники и чай</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="mt-6 text-xs text-white/50">Цены ориентировочные. Актуальные условия и скидки на длительное проживание уточняйте у владельцев.</p>
+      </div>
+    </section>
+
+    <!-- ПРАВИЛА -->
+    <section class="bg-[#f7f4ed] px-5 py-20 sm:px-8 sm:py-24">
+      <div class="mx-auto max-w-7xl">
+        <div class="grid gap-10 lg:grid-cols-[.8fr_1.2fr] lg:items-start">
+          <div>
+            <p class="text-xs font-bold tracking-[.22em] text-emerald-800">ПРАВИЛА И ВМЕСТИМОСТЬ</p>
+            <h2 class="mt-4 font-display text-4xl font-semibold leading-tight tracking-[-.04em] text-[#24352a] sm:text-5xl">Всё, что важно<br><span class="text-emerald-800">знать заранее</span></h2>
+            <p class="mt-5 max-w-md text-sm leading-7 text-stone-600">Чтобы отдых прошёл спокойно, мы заранее рассказываем о правилах. Если чего-то не нашли — напишите, ответим.</p>
+          </div>
+
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="rounded-2xl border border-stone-200/80 bg-white p-5">
+              <p class="text-xs font-bold uppercase tracking-[.16em] text-stone-500">Вместимость</p>
+              <p class="mt-2 font-display text-lg font-bold text-[#263a2e]">До 6 гостей</p>
+              <p class="mt-1 text-sm leading-6 text-stone-600">Дом рассчитан на комфортный отдых семьи или компании друзей.</p>
+            </div>
+            <div class="rounded-2xl border border-stone-200/80 bg-white p-5">
+              <p class="text-xs font-bold uppercase tracking-[.16em] text-stone-500">С детьми</p>
+              <p class="mt-2 font-display text-lg font-bold text-[#263a2e]">Можно</p>
+              <p class="mt-1 text-sm leading-6 text-stone-600">Есть место для прогулок; уточните возраст детей при бронировании.</p>
+            </div>
+            <div class="rounded-2xl border border-stone-200/80 bg-white p-5">
+              <p class="text-xs font-bold uppercase tracking-[.16em] text-stone-500">С животными</p>
+              <p class="mt-2 font-display text-lg font-bold text-[#263a2e]">По согласованию</p>
+              <p class="mt-1 text-sm leading-6 text-stone-600">Небольшие питомцы — по договорённости с владельцами.</p>
+            </div>
+            <div class="rounded-2xl border border-stone-200/80 bg-white p-5">
+              <p class="text-xs font-bold uppercase tracking-[.16em] text-stone-500">Парковка</p>
+              <p class="mt-2 font-display text-lg font-bold text-[#263a2e]">На территории</p>
+              <p class="mt-1 text-sm leading-6 text-stone-600">Бесплатно, для 2–3 автомобилей.</p>
+            </div>
+            <div class="rounded-2xl border border-stone-200/80 bg-white p-5">
+              <p class="text-xs font-bold uppercase tracking-[.16em] text-stone-500">Wi-Fi</p>
+              <p class="mt-2 font-display text-lg font-bold text-[#263a2e]">Есть</p>
+              <p class="mt-1 text-sm leading-6 text-stone-600">Достаточно для работы и видеозвонков.</p>
+            </div>
+            <div class="rounded-2xl border border-stone-200/80 bg-white p-5">
+              <p class="text-xs font-bold uppercase tracking-[.16em] text-stone-500">Заезд / выезд</p>
+              <p class="mt-2 font-display text-lg font-bold text-[#263a2e]">15:00 / 12:00</p>
+              <p class="mt-1 text-sm leading-6 text-stone-600">Ранний заезд и поздний выезд — по возможности.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ОТЗЫВЫ -->
+    <section id="отзывы" class="bg-[#eeece4] px-5 py-20 sm:px-8 sm:py-24">
+      <div class="mx-auto max-w-7xl">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-xs font-bold tracking-[.22em] text-emerald-800">ОТЗЫВЫ ГОСТЕЙ</p>
+            <h2 class="mt-4 font-display text-4xl font-semibold tracking-[-.04em] text-[#24352a] sm:text-5xl">Уже были у нас</h2>
+          </div>
+          <div class="flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-[#263a2e] shadow-sm">
+            <span class="text-[#d8b574]">★★★★★</span>
+            <span class="text-stone-500">4,9 из 5</span>
+          </div>
+        </div>
+
+        <div class="mt-10 grid gap-5 md:grid-cols-3">
+          <figure class="rounded-[1.75rem] bg-white p-6 shadow-sm">
+            <div class="text-[#d8b574]" aria-hidden="true">★★★★★</div>
+            <blockquote class="mt-3 text-sm leading-7 text-stone-600">«Приехали на выходные — уехали с ощущением, что были в отпуске неделю. Баня и чан — отдельная любовь. Всё чисто, продумано до мелочей.»</blockquote>
+            <figcaption class="mt-4 flex items-center gap-3">
+              <div class="flex h-11 w-11 items-center justify-center rounded-full bg-[#eef2e9] font-display text-lg font-bold text-emerald-800">А</div>
+              <div>
+                <p class="text-sm font-bold text-[#263a2e]">Анна и Дмитрий</p>
+                <p class="text-xs text-stone-500">Екатеринбург · выходные</p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="rounded-[1.75rem] bg-white p-6 shadow-sm">
+            <div class="text-[#d8b574]" aria-hidden="true">★★★★★</div>
+            <blockquote class="mt-3 text-sm leading-7 text-stone-600">«Тишина, сосны, костёр. Дети в восторге от дома-шалаша, а мы — от вечернего чана. Хозяева очень отзывчивые, помогли с маршрутом.»</blockquote>
+            <figcaption class="mt-4 flex items-center gap-3">
+              <div class="flex h-11 w-11 items-center justify-center rounded-full bg-[#f5ead9] font-display text-lg font-bold text-amber-900">К</div>
+              <div>
+                <p class="text-sm font-bold text-[#263a2e]">Семья Кузнецовых</p>
+                <p class="text-xs text-stone-500">Челябинск · 3 ночи</p>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="rounded-[1.75rem] bg-white p-6 shadow-sm">
+            <div class="text-[#d8b574]" aria-hidden="true">★★★★★</div>
+            <blockquote class="mt-3 text-sm leading-7 text-stone-600">«Бронировали напрямую — вышло дешевле, чем через сервис. Баня настоящая, с паром и вениками. Вернёмся зимой, хочется посмотреть на снег из чана.»</blockquote>
+            <figcaption class="mt-4 flex items-center gap-3">
+              <div class="flex h-11 w-11 items-center justify-center rounded-full bg-[#eef2e9] font-display text-lg font-bold text-emerald-800">М</div>
+              <div>
+                <p class="text-sm font-bold text-[#263a2e]">Мария</p>
+                <p class="text-xs text-stone-500">Екатеринбург · будни</p>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="relative overflow-hidden bg-[#203329] px-5 py-20 text-white sm:px-8 sm:py-24">
+      <div class="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-emerald-300/10 blur-3xl"></div>
+      <div class="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_auto] lg:items-center">
+        <div>
+          <p class="text-xs font-bold tracking-[.22em] text-[#dfc48d]">НЕ НУЖЕН ОСОБЫЙ ПОВОД</p>
+          <h2 class="mt-4 max-w-3xl font-display text-4xl font-semibold leading-tight tracking-[-.04em] sm:text-5xl">Иногда лучший план —<br class="hidden sm:block"> просто уехать в лес.</h2>
+          <p class="mt-5 max-w-2xl leading-7 text-white/70">Выберите даты и оставьте запрос на проверку доступности. Условия проживания и детали отдыха можно уточнить у владельцев.</p>
+        </div>
+        <a href="#бронирование" class="inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-[#d8b574] px-7 font-bold text-[#1d2b21] transition hover:-translate-y-0.5 hover:bg-[#e7ca8e]">
+          Подобрать даты
+          <svg viewBox="0 0 20 20" class="h-5 w-5" fill="none" aria-hidden="true">
+            <path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- ЛОКАЦИЯ + КАРТА -->
+    <section id="локация" class="bg-[#f7f4ed] px-5 py-20 sm:px-8 sm:py-24">
+      <div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2 lg:items-start">
+        <div>
+          <p class="text-xs font-bold tracking-[.22em] text-emerald-800">УРАЛЬСКИЙ ЛЕС РЯДОМ</p>
+          <h2 class="mt-4 font-display text-4xl font-semibold leading-tight tracking-[-.04em] text-[#24352a] sm:text-5xl">Кургановский.<br><span class="text-emerald-800">Ваше место тишины.</span></h2>
+          <p class="mt-6 max-w-xl text-base leading-8 text-stone-600">Гостевой комплекс «УЮТ» находится в дачном посёлке Кургановский под Екатеринбургом. Приезжайте за лесной тишиной, горячим чаном и временем для себя.</p>
+
+          <div class="mt-7 space-y-3">
+            <div class="flex items-start gap-3 rounded-2xl border border-stone-200/80 bg-white p-4">
+              <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#eef2e9] text-emerald-800" aria-hidden="true">
+                <svg viewBox="0 0 20 20" class="h-4 w-4" fill="none"><path d="M3 11 10 4l7 7v6H3v-6Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 17v-4h4v4" stroke="currentColor" stroke-width="1.6"/></svg>
+              </span>
+              <div>
+                <p class="text-sm font-bold text-[#263a2e]">На машине</p>
+                <p class="text-sm leading-6 text-stone-600">~25 минут от Екатеринбурга по Полевскому тракту. На территории — бесплатная парковка.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 rounded-2xl border border-stone-200/80 bg-white p-4">
+              <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#eef2e9] text-emerald-800" aria-hidden="true">
+                <svg viewBox="0 0 20 20" class="h-4 w-4" fill="none"><circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.6"/><path d="M10 6v4l2.5 2.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <div>
+                <p class="text-sm font-bold text-[#263a2e]">На такси</p>
+                <p class="text-sm leading-6 text-stone-600">Из центра Екатеринбурга — около 30–40 минут. Попросите водителя ехать до дп Кургановский.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://yandex.ru/maps/geo/dachny_posyolok_kurganovskiy/3171698667/?ll=60.446616%2C56.662180&z=15" target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-2 font-bold text-emerald-900 transition hover:gap-3">Открыть в Яндекс.Картах <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="relative min-h-[380px] overflow-hidden rounded-3xl bg-[#e8e5db] shadow-xl">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=60.446616%2C56.662180&z=15&pt=60.446616,56.662180,pm2rdm"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            allowfullscreen="true"
+            style="position:absolute; inset:0; width:100%; height:100%; border:0;"
+            title="Карта дачного посёлка Кургановский на Яндекс.Картах"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="вопросы" class="bg-[#eeece4] px-5 py-20 sm:px-8 sm:py-24">
+      <div class="mx-auto max-w-4xl">
+        <p class="text-center text-xs font-bold tracking-[.22em] text-emerald-800">ПЕРЕД ПОЕЗДКОЙ</p>
+        <h2 class="mt-4 text-center font-display text-4xl font-semibold tracking-[-.04em] text-[#24352a] sm:text-5xl">Частые вопросы</h2>
+
+        <div class="mt-10 divide-y divide-stone-300/80 rounded-[1.75rem] bg-white/70 px-6 sm:px-9">
+
+          <div class="faq-item">
+            <button type="button" id="faqBtn1" class="faq-question flex w-full items-center justify-between gap-5 py-5 text-left font-display font-bold text-[#263a2e]" aria-expanded="false" aria-controls="faqAnswer1">
+              <span>Как проверить свободные даты?</span>
+              <span class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#e8efe6] text-lg leading-none text-emerald-900" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faqAnswer1" role="region" aria-labelledby="faqBtn1">
+              <p class="pb-5 pr-8 text-sm leading-7 text-stone-600">Выберите даты в форме на сайте, укажите количество гостей и телефон — отправьте запрос. Мы свяжемся с вами в течение дня и подтвердим доступность.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" id="faqBtn2" class="faq-question flex w-full items-center justify-between gap-5 py-5 text-left font-display font-bold text-[#263a2e]" aria-expanded="false" aria-controls="faqAnswer2">
+              <span>Где находится гостевой комплекс?</span>
+              <span class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#e8efe6] text-lg leading-none text-emerald-900" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faqAnswer2" role="region" aria-labelledby="faqBtn2">
+              <p class="pb-5 pr-8 text-sm leading-7 text-stone-600">В дачном посёлке Кургановский под Екатеринбургом, около 25 минут на машине от города. Точный адрес и маршрут пришлём после подтверждения брони.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" id="faqBtn3" class="faq-question flex w-full items-center justify-between gap-5 py-5 text-left font-display font-bold text-[#263a2e]" aria-expanded="false" aria-controls="faqAnswer3">
+              <span>Что входит в атмосферу отдыха?</span>
+              <span class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#e8efe6] text-lg leading-none text-emerald-900" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faqAnswer3" role="region" aria-labelledby="faqBtn3">
+              <p class="pb-5 pr-8 text-sm leading-7 text-stone-600">Дом A-Frame в сосновом бору, русская деревянная баня, горячий чан под открытым небом, костровая зона и мангал. Баня и чан бронируются отдельно.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" id="faqBtn4" class="faq-question flex w-full items-center justify-between gap-5 py-5 text-left font-display font-bold text-[#263a2e]" aria-expanded="false" aria-controls="faqAnswer4">
+              <span>Можно ли приехать с детьми и животными?</span>
+              <span class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#e8efe6] text-lg leading-none text-emerald-900" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faqAnswer4" role="region" aria-labelledby="faqBtn4">
+              <p class="pb-5 pr-8 text-sm leading-7 text-stone-600">С детьми — да, дом рассчитан до 6 гостей. С небольшими животными — по согласованию с владельцами. Уточните детали при бронировании.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" id="faqBtn5" class="faq-question flex w-full items-center justify-between gap-5 py-5 text-left font-display font-bold text-[#263a2e]" aria-expanded="false" aria-controls="faqAnswer5">
+              <span>Как оплатить и можно ли отменить бронь?</span>
+              <span class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#e8efe6] text-lg leading-none text-emerald-900" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faqAnswer5" role="region" aria-labelledby="faqBtn5">
+              <p class="pb-5 pr-8 text-sm leading-7 text-stone-600">Оплата — напрямую владельцам: перевод или наличные при заезде. Условия отмены обсуждаются индивидуально, обычно возможен перенос дат.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" id="faqBtn6" class="faq-question flex w-full items-center justify-between gap-5 py-5 text-left font-display font-bold text-[#263a2e]" aria-expanded="false" aria-controls="faqAnswer6">
+              <span>Что взять с собой?</span>
+              <span class="faq-icon flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#e8efe6] text-lg leading-none text-emerald-900" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer" id="faqAnswer6" role="region" aria-labelledby="faqBtn6">
+              <p class="pb-5 pr-8 text-sm leading-7 text-stone-600">В доме есть всё для базового отдыха: посуда, полотенца, Wi-Fi. Возьмите любимые продукты, сменную обувь и хорошее настроение. Веники и чай для бани — у нас.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#f7f4ed] px-5 py-16 sm:px-8">
+      <div class="mx-auto max-w-7xl rounded-[1.5rem] border border-stone-200/80 bg-white/50 p-6 sm:p-8">
+        <p class="text-xs font-bold tracking-[.18em] text-emerald-800">ЗАГОРОДНЫЙ ОТДЫХ РЯДОМ С ЕКАТЕРИНБУРГОМ</p>
+        <p class="mt-3 max-w-5xl text-sm leading-7 text-stone-600">
+          Гостевой комплекс «УЮТ» в дачном посёлке Кургановский — это загородный отдых в сосновом бору, дизайнерский дом A-Frame, русская баня и горячий чан под открытым небом. Если вы ищете дом с чаном, баню в лесу или аренду коттеджа посуточно под Екатеринбургом, Чкаловским районом и рядом с Полевским трактом, здесь можно провести время вдали от городского ритма. Уточните у владельцев доступность дат, адрес и условия проживания.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacts" class="bg-slate-900 px-5 pb-28 pt-14 text-white sm:px-8 sm:pb-14">
+    <div class="mx-auto max-w-7xl">
+      <div class="grid gap-10 border-b border-white/10 pb-10 md:grid-cols-[1.2fr_.8fr] md:items-start">
+        <div>
+          <a href="#главная" class="inline-flex items-center gap-3" aria-label="УЮТ — на главную">
+            <span class="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/10 text-[#e3c68d]">
+              <svg viewBox="0 0 40 40" class="h-7 w-7" fill="none" aria-hidden="true">
+                <path d="M5 29.5 20 8l15 21.5H5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M14 29.5V20h12v9.5M18 20v9.5M22 20v9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span>
+              <span class="block font-display text-lg font-extrabold tracking-[.18em]">УЮТ</span>
+              <span class="block text-[9px] font-semibold tracking-[.25em] text-white/50">FOREST RESORT</span>
+            </span>
+          </a>
+          <p class="mt-5 max-w-md text-sm leading-7 text-white/60">Дом-шалаш, баня и горячий чан в сосновом бору. Загородное уединение в Кургановском под Екатеринбургом.</p>
+
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="tel:+79000000000" class="inline-flex h-11 items-center gap-2 rounded-full border border-white/15 px-4 text-sm font-semibold text-white/85 transition hover:-translate-y-1 hover:border-[#d8b574] hover:text-[#e5c98f]">
+              <svg viewBox="0 0 20 20" class="h-4 w-4" fill="none"><path d="M4 3.5h3l1.5 4-2 1.2a9 9 0 0 0 4.8 4.8l1.2-2 4 1.5v3a1.5 1.5 0 0 1-1.6 1.5A14.5 14.5 0 0 1 3.5 5.1 1.5 1.5 0 0 1 4 3.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              +7 900 000-00-00
+            </a>
+            <a href="https://wa.me/79000000000" target="_blank" rel="noopener" class="inline-flex h-11 items-center gap-2 rounded-full border border-white/15 px-4 text-sm font-semibold text-white/85 transition hover:-translate-y-1 hover:border-[#d8b574] hover:text-[#e5c98f]">
+              <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.2c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.2-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 .9-2.2.2-.3.5-.4.7-.4h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.5c-.1.2-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.2 1.1 2.2 1.4 2.5 1.5.2.1.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l1.9.9c.5.2.5.3.5.4.1.2.1 1-.1 1.6Z"/></svg>
+              WhatsApp
+            </a>
+            <a href="https://vk.com/" target="_blank" rel="noopener" class="inline-flex h-11 items-center gap-2 rounded-full border border-white/15 px-4 text-sm font-semibold text-white/85 transition hover:-translate-y-1 hover:border-[#d8b574] hover:text-[#e5c98f]">
+              <svg viewBox="0 0 24 24" class="h-4 w-4" fill="currentColor"><path d="M13.2 18.5c-5.6 0-8.8-3.9-8.9-10.3h2.8c.1 4.7 2.2 6.7 3.8 7.1V8.2h2.6v4.1c1.6-.2 3.3-2 3.9-4.1h2.6c-.4 2.1-2 4.4-3.2 5 1.2.6 3 2.6 3.7 5.2h-2.9c-.5-1.5-1.9-3.1-3.5-3.3v3.4h-.9Z"/></svg>
+              ВКонтакте
+            </a>
+          </div>
+        </div>
+        <div class="md:justify-self-end">
+          <p class="text-xs font-bold tracking-[.18em] text-[#dfc48d]">БЫСТРЫЕ ССЫЛКИ</p>
+          <nav class="mt-3 grid grid-cols-2 gap-x-6 gap-y-2 text-sm text-white/70" aria-label="Ссылки в подвале">
+            <a class="transition hover:text-[#e5c98f]" href="#атмосфера">Атмосфера</a>
+            <a class="transition hover:text-[#e5c98f]" href="#отдых">Баня и отдых</a>
+            <a class="transition hover:text-[#e5c98f]" href="#цены">Цены</a>
+            <a class="transition hover:text-[#e5c98f]" href="#отзывы">Отзывы</a>
+            <a class="transition hover:text-[#e5c98f]" href="#локация">Локация</a>
+            <a class="transition hover:text-[#e5c98f]" href="#вопросы">Вопросы</a>
+          </nav>
+          <a href="#бронирование" class="mt-5 inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-[#d8b574] px-5 text-sm font-bold text-[#1d2b21] transition hover:bg-[#e7ca8e]">
+            Забронировать
+            <svg viewBox="0 0 20 20" class="h-4 w-4" fill="none"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-3 pt-6 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
+        <p>© 2026 Гостевой комплекс «УЮТ». Все права защищены.</p>
+        <p>Разработано для гостевого дома УЮТ</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- МОБИЛЬНАЯ ПАНЕЛЬ -->
+  <div class="mobile-booking-bar fixed inset-x-0 bottom-0 z-40 border-t border-stone-200/80 bg-[#faf9f5]/90 px-4 pt-3 backdrop-blur-xl lg:hidden">
+    <div class="grid grid-cols-[auto_1fr] gap-2">
+      <a href="tel:+79000000000" class="flex min-h-12 items-center justify-center rounded-full border border-[#263a2e] px-4 font-bold text-[#263a2e]" aria-label="Позвонить">
+        <svg viewBox="0 0 20 20" class="h-5 w-5" fill="none"><path d="M4 3.5h3l1.5 4-2 1.2a9 9 0 0 0 4.8 4.8l1.2-2 4 1.5v3a1.5 1.5 0 0 1-1.6 1.5A14.5 14.5 0 0 1 3.5 5.1 1.5 1.5 0 0 1 4 3.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#бронирование" class="flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#263a2e] px-5 font-bold text-white shadow-lg">
+        Забронировать напрямую
+        <svg viewBox="0 0 20 20" class="h-4 w-4" fill="none"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- КНОПКА НАВЕРХ -->
+  <button id="backToTop" type="button" class="back-to-top fixed bottom-24 right-4 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-[#263a2e] text-[#e5c98f] shadow-lg transition hover:bg-[#34503d] sm:bottom-6 sm:right-6" aria-label="Наверх">
+    <svg viewBox="0 0 20 20" class="h-5 w-5" fill="none" aria-hidden="true">
+      <path d="M10 16V5m-5 5 5-5 5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- МОДАЛКА ПРОВЕРКИ -->
+  <div id="searchModal" class="modal-backdrop fixed inset-0 z-[70] flex items-center justify-center bg-[#101812]/65 p-4 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-card relative w-full max-w-md rounded-[2rem] bg-[#f8f5ed] p-7 text-center shadow-2xl sm:p-9">
+      <button id="closeModal" type="button" class="absolute right-5 top-5 flex h-10 w-10 items-center justify-center rounded-full bg-stone-200/70 text-stone-600 transition hover:bg-stone-300" aria-label="Закрыть окно">
+        <svg viewBox="0 0 20 20" class="h-5 w-5" fill="none" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      </button>
+      <div id="modalLoading" class="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-[#e8efe6]">
+        <span class="spinner" aria-hidden="true"></span>
+      </div>
+      <div id="modalSuccess" class="mx-auto hidden h-16 w-16 items-center justify-center rounded-2xl bg-[#e8efe6] text-3xl text-emerald-800" aria-hidden="true">✓</div>
+      <p class="mt-5 text-xs font-bold tracking-[.2em] text-emerald-800">УЮТ • FOREST RESORT</p>
+      <h2 id="modalTitle" class="mt-2 font-display text-2xl font-bold text-[#24352a]">Идёт поиск...</h2>
+      <p id="modalMessage" class="mt-3 text-sm leading-6 text-stone-600">Подготавливаем выбранные даты для проверки.</p>
+      <div id="selectedDates" class="mt-5 hidden rounded-2xl bg-white px-4 py-3 text-sm font-semibold text-[#263a2e]"></div>
+      <button id="modalDone" type="button" class="mt-6 hidden min-h-12 w-full rounded-full bg-[#263a2e] px-5 font-bold text-white transition hover:bg-[#34503d]">Понятно</button>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox fixed inset-0 z-[80] flex items-center justify-center bg-[#0a110d]/95 p-4 backdrop-blur-md sm:p-8" role="dialog" aria-modal="true" aria-label="Просмотр фотографии" aria-hidden="true">
+    <button id="lightboxClose" type="button" class="absolute right-4 top-4 z-10 flex h-12 w-12 items-center justify-center rounded-full border border-white/20 bg-white/10 text-white transition hover:scale-105 hover:bg-white/20 sm:right-8 sm:top-8" aria-label="Закрыть просмотр">
+      <svg viewBox="0 0 20 20" class="h-6 w-6" fill="none" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+
+    <figure class="relative m-0 flex w-full max-w-5xl flex-col items-center">
+      <img id="lightboxImage" src="" alt="" class="lightbox-image max-h-[76vh] w-auto max-w-full rounded-[1.25rem] object-contain shadow-[0_40px_120px_rgba(0,0,0,.6)] sm:rounded-[1.75rem]">
+      <figcaption id="lightboxCaption" class="mt-5 text-center font-display text-sm font-semibold tracking-[.08em] text-white/65 sm:text-base"></figcaption>
+      <p class="mt-1 text-center text-[11px] tracking-wide text-white/35">Нажмите в любом месте или Esc, чтобы закрыть</p>
+    </figure>
+  </div>
+
+  <script>
+    /* ============================================================
+       МОБИЛЬНОЕ МЕНЮ
+       ============================================================ */
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuButton.addEventListener("click", () => {
+      const isOpen = mobileMenu.classList.toggle("is-open");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute("aria-label", isOpen ? "Закрыть меню" : "Открыть меню");
+      document.body.classList.toggle("overflow-hidden", isOpen);
+    });
+
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("is-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Открыть меню");
+        document.body.classList.remove("overflow-hidden");
+      });
+    });
+
+    /* ============================================================
+       ФОРМА ДАТ И МОДАЛЬНОЕ ОКНО ПРОВЕРКИ
+       ============================================================ */
+    const availabilityForm = document.getElementById("availabilityForm");
+    const checkIn = document.getElementById("checkIn");
+    const checkOut = document.getElementById("checkOut");
+    const guests = document.getElementById("guests");
+    const phone = document.getElementById("phone");
+    const dateError = document.getElementById("dateError");
+    const modal = document.getElementById("searchModal");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalMessage = document.getElementById("modalMessage");
+    const modalLoading = document.getElementById("modalLoading");
+    const modalSuccess = document.getElementById("modalSuccess");
+    const selectedDates = document.getElementById("selectedDates");
+    const modalDone = document.getElementById("modalDone");
+    const closeModalButton = document.getElementById("closeModal");
+    let modalTimer;
+
+    function localDateString(date) {
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, "0");
+      const day = String(date.getDate()).padStart(2, "0");
+      return `${year}-${month}-${day}`;
+    }
+
+    function formatDate(value) {
+      return new Intl.DateTimeFormat("ru-RU", {
+        day: "numeric", month: "long", year: "numeric"
+      }).format(new Date(`${value}T12:00:00`));
+    }
+
+    const today = new Date();
+    const tomorrow = new Date(today);
+    tomorrow.setDate(today.getDate() + 1);
+
+    checkIn.min = localDateString(today);
+    checkOut.min = localDateString(tomorrow);
+
+    function showDateError(message) {
+      dateError.textContent = message;
+      dateError.classList.remove("hidden");
+    }
+
+    function clearDateError() {
+      dateError.textContent = "";
+      dateError.classList.add("hidden");
+    }
+
+    checkIn.addEventListener("change", () => {
+      clearDateError();
+      if (!checkIn.value) return;
+      const nextDate = new Date(`${checkIn.value}T12:00:00`);
+      nextDate.setDate(nextDate.getDate() + 1);
+      const earliestCheckout = localDateString(nextDate);
+      checkOut.min = earliestCheckout;
+      if (!checkOut.value || checkOut.value <= checkIn.value) {
+        checkOut.value = earliestCheckout;
+      }
+    });
+
+    checkOut.addEventListener("change", clearDateError);
+
+    function openModal() {
+      modal.classList.add("is-open");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("overflow-hidden");
+      closeModalButton.focus();
+    }
+
+    function closeModal() {
+      modal.classList.remove("is-open");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("overflow-hidden");
+      window.clearTimeout(modalTimer);
+    }
+
+    function resetModal() {
+      modalLoading.classList.remove("hidden");
+      modalSuccess.classList.add("hidden");
+      modalTitle.textContent = "Идёт поиск...";
+      modalMessage.textContent = "Подготавливаем выбранные даты для проверки.";
+      selectedDates.classList.add("hidden");
+      modalDone.classList.add("hidden");
+    }
+
+    availabilityForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      clearDateError();
+
+      if (!checkIn.value || !checkOut.value) {
+        showDateError("Пожалуйста, выберите даты заезда и выезда.");
+        return;
+      }
+
+      if (checkOut.value <= checkIn.value) {
+        showDateError("Дата выезда должна быть позже даты заезда.");
+        return;
+      }
+
+      if (!phone.value || phone.value.replace(/\D/g, "").length < 10) {
+        phone.focus();
+        phone.setCustomValidity("Укажите телефон или мессенджер для ответа.");
+        phone.reportValidity();
+        phone.setCustomValidity("");
+        return;
+      }
+
+      resetModal();
+      const guestLabel = guests.options[guests.selectedIndex].text;
+      selectedDates.textContent = `${formatDate(checkIn.value)} — ${formatDate(checkOut.value)} · ${guestLabel}`;
+      selectedDates.classList.remove("hidden");
+      openModal();
+
+      modalTimer = window.setTimeout(() => {
+        modalLoading.classList.add("hidden");
+        modalSuccess.classList.remove("hidden");
+        modalTitle.textContent = "Запрос подготовлен";
+        modalMessage.textContent = "Мы свяжемся с вами по указанному телефону, чтобы подтвердить свободные даты и детали отдыха.";
+        modalDone.classList.remove("hidden");
+        modalDone.focus();
+      }, 1100);
+    });
+
+    closeModalButton.addEventListener("click", closeModal);
+    modalDone.addEventListener("click", closeModal);
+
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) closeModal();
+    });
+
+    document.querySelectorAll('a[href="#бронирование"]').forEach((link) => {
+      link.addEventListener("click", () => {
+        window.setTimeout(() => {
+          const form = document.getElementById("бронирование");
+          if (form) form.scrollIntoView({ behavior: "smooth", block: "center" });
+          checkIn.focus({ preventScroll: true });
+        }, 50);
+      });
+    });
+
+    /* ============================================================
+       FAQ-АККОРДЕОН
+       ============================================================ */
+    const faqItems = Array.from(document.querySelectorAll(".faq-item"));
+
+    function openFaq(item) {
+      const button = item.querySelector(".faq-question");
+      const panel = item.querySelector(".faq-answer");
+      item.classList.add("is-open");
+      button.setAttribute("aria-expanded", "true");
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+
+    function closeFaq(item) {
+      const button = item.querySelector(".faq-question");
+      const panel = item.querySelector(".faq-answer");
+      item.classList.remove("is-open");
+      button.setAttribute("aria-expanded", "false");
+      panel.style.maxHeight = "0px";
+    }
+
+    faqItems.forEach((item) => {
+      const button = item.querySelector(".faq-question");
+      button.addEventListener("click", () => {
+        const isOpen = item.classList.contains("is-open");
+        faqItems.forEach((other) => {
+          if (other !== item && other.classList.contains("is-open")) closeFaq(other);
+        });
+        if (isOpen) closeFaq(item);
+        else openFaq(item);
+      });
+    });
+
+    window.addEventListener("resize", () => {
+      faqItems.forEach((item) => {
+        if (!item.classList.contains("is-open")) return;
+        const panel = item.querySelector(".faq-answer");
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      });
+    });
+
+    /* ============================================================
+       LIGHTBOX
+       ============================================================ */
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+    const lightboxCaption = document.getElementById("lightboxCaption");
+    const lightboxClose = document.getElementById("lightboxClose");
+    let lightboxTrigger = null;
+
+    function openLightbox(trigger) {
+      const src = trigger.getAttribute("data-src");
+      const caption = trigger.getAttribute("data-caption") || "";
+      const innerImg = trigger.querySelector("img");
+      lightboxTrigger = trigger;
+      lightboxImage.src = src;
+      lightboxImage.alt = innerImg ? innerImg.alt : caption;
+      lightboxCaption.textContent = caption;
+      lightbox.classList.add("is-open");
+      lightbox.setAttribute("aria-hidden", "false");
+      document.body.classList.add("overflow-hidden");
+      window.setTimeout(() => lightboxClose.focus({ preventScroll: true }), 60);
+    }
+
+    function closeLightbox() {
+      if (!lightbox.classList.contains("is-open")) return;
+      lightbox.classList.remove("is-open");
+      lightbox.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("overflow-hidden");
+      if (lightboxTrigger) {
+        lightboxTrigger.focus({ preventScroll: true });
+        lightboxTrigger = null;
+      }
+    }
+
+    document.querySelectorAll("[data-lightbox]").forEach((trigger) => {
+      trigger.addEventListener("click", () => openLightbox(trigger));
+      trigger.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " " || event.key === "Spacebar") {
+          event.preventDefault();
+          openLightbox(trigger);
+        }
+      });
+    });
+
+    lightboxClose.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox || event.target === lightboxImage) closeLightbox();
+    });
+
+    /* ============================================================
+       ESC + КНОПКА НАВЕРХ
+       ============================================================ */
+    const backToTop = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 600) backToTop.classList.add("is-visible");
+      else backToTop.classList.remove("is-visible");
+    }, { passive: true });
+
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape") return;
+      if (lightbox.classList.contains("is-open")) { closeLightbox(); return; }
+      if (modal.classList.contains("is-open")) closeModal();
+    });
+  </script>
+</body>
+</html>
